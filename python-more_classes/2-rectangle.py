@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 """
-A class Rectangle that defines a rectangle by:(based on 1-rectangle.py)
+A class Rectangle that defines a rectangle by: (based on 1-rectangle.py)
 """
+
 
 class Rectangle:
     """Creates a rectangle."""
 
-    def init(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initialize data."""
         self.width = width
         self.height = height
 
-     @property
+    @property
     def width(self):
         """Retrieves the width."""
         return self.__width
