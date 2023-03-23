@@ -3,6 +3,7 @@
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    """Task based on 8-rectangle.py"""
 
 
 class Rectangle(BaseGeometry):
