@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Inherits BaseGeometry class documented now"""
 
-from 7-base_geometry import BaseGeometry
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
-    """Class Rectangle that inherits from BaseGeometry"""
+    """Class Rectangle"""
 
     def __init__(self, width, height):
         """Initialize data."""
@@ -15,8 +17,10 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Returns [Rectangle] <width>/<height>."""
+
         return str("[Rectangle] {}/{}".format(self.__width, self.__height))
 
     def area(self):
         """Area of rectangle"""
+
         return self.__width * self.__height
