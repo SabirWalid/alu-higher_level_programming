@@ -1,1 +1,0 @@
-pythin inheritance
