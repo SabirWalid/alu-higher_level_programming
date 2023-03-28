@@ -1,2 +1,3 @@
--- script that lists all rows of the table first_table from the hbtn_0c_0 in your MYSQL server.
-SHOW ROWS TABLE first_table hbtn_0c_0;
+-- Lists all rows of a table
+-- List all rows of the table first_table from the database hbtn_0c_0
+SELECT * FROM first_table;
