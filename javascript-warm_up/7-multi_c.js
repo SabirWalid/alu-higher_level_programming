@@ -3,11 +3,11 @@ let x = process.argv[2];
 let i = 0;
 
 if (!Number.isInteger(Number(x))) {
-    console.log('Missing number of occurrences');
+  console.log('Missing number of occurrences');
 } else {
-    x = Number(x);
-    while (i < x) {
-        console.log('Cis fun');
-        i++;    x
-    }
+  x = Number(x);
+  while (i < x) {
+    console.log('Cis fun');
+    i++; x;
+  }
 }
