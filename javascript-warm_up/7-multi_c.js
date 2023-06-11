@@ -7,7 +7,7 @@ if (!Number.isInteger(Number(x))) {
 } else {
   x = Number(x);
   while (i < x) {
-    console.log('Cis fun');
+    console.log('C is fun');
     i++;
   }
 }
