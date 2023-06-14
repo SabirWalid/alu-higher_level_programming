@@ -2,8 +2,22 @@
 const request = require('request');
 const fs = require('fs');
 
-request(process.argv[2], function (err, response, body) {
-  if (err == null) {
-    fs.writeFileSync(process.argv[3], body);
+const url = process.argv[2];
+const filePath = process.argv[3];
+
+request.get({
+  uri: url,
+  encoding: 'utf-8'
+}, function (err, res, body) {
+  if (err) {
+    console.error(err);
+    return;
   }
+  fs.writeFile(filePath, body, function (err) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(`File saved to ${filePath}`);
+  });
 });
