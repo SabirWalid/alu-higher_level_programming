@@ -1,0 +1,3 @@
+{
+    My Jquery readme file
+}
